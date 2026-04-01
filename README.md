@@ -1,59 +1,34 @@
-# PizzariaFrontend
+# 🍕 Pizzaria API - Frontend
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.6.
+Este é o ecossistema visual da nossa pizzaria, desenvolvido em Angular para consumir a [Pizzaria API (Backend)](link-do-seu-repo-backend). O projeto foca em oferecer uma experiência fluida tanto para o cliente final quanto para a gestão administrativa.
 
-## Development server
+## 🚀 Tecnologias Utilizadas
+* **Angular 17+**: Framework principal para a construção da SPA (Single Page Application).
+* **TypeScript**: Garantindo tipagem estrita e menos erros em tempo de execução.
+* **CSS3**: Estilização personalizada para uma interface moderna.
+* **Angular CLI**: Automação de builds e geração de componentes.
 
-To start a local development server, run:
+## 🛠️ Funcionalidades em Desenvolvimento
+* **Autenticação Segura**: Integração com JWT gerado pelo backend.
+* **Visão do Cliente**: Catálogo de pizzas e acompanhamento de pedidos.
+* **Painel Administrativo**: Gestão de produtos e status de produção.
 
-```bash
-ng serve
-```
+## 📋 Roadmap de Sprints (Frontend)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* [x] **Sprint 01: Fundação e Arquitetura Inicial**
+    * Setup do projeto com Angular CLI.
+    * Estruturação de pastas (`pages`, `components`, `services`).
+    * Criação dos componentes base: Login, Home (Cliente) e Painel (Admin).
+* [ ] **Sprint 02: Roteamento e Navegação**
+    * Configuração do `app.routes.ts`.
+    * Criação de menus de navegação.
+* [ ] **Sprint 03: Integração com Backend (Autenticação)**
+    * Implementação do AuthService no Angular.
+    * Consumo do endpoint `/login` e armazenamento do Token.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🔧 Como Rodar o Projeto
+1. Clone o repositório.
+2. Certifique-se de ter o Node.js instalado.
+3. Instale as dependências: `npm install`.
+4. Inicie o servidor de desenvolvimento: `ng serve`.
+5. Acesse `http://localhost:4200/`.
