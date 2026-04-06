@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2>Acesso ao Sistema - Pizzaria</h2>
+
+    <form (ngSubmit)="fazerLogin()">
+
+        <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" [(ngModel)]="email" required placeholder="admin@pizzaria.com">
+        </div>
+
+        <div class="input-group">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" [(ngModel)]="senha" required placeholder="********">
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+</div>
